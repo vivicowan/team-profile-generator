@@ -3,7 +3,7 @@ const Manager = require("../lib/Manager");
 describe("Manager", () => {
 	describe("constructor", () => {
 	  it("should create an manager object", () => {
-			const manager = new Intern("Vivi", 1738, "vivicowan0@gmail.com", 6969);
+			const manager = new Manager("Vivi", 1738, "vivicowan0@gmail.com", 6969);
 			
 			expect(typeof(manager)).toEqual("object");
 			expect(manager.name).toEqual(expect.any(String));
@@ -24,8 +24,8 @@ describe("Manager", () => {
       
 	describe("getRole", () => {
 		it("should return Intern as role", () => {
-			const testRole = "Intern";
-			const manager = new Intern("Vivi", 1738, "vivicowan0@gmail.com");
+			const testRole = "Manager";
+			const manager = new Manager("Vivi", 1738, "vivicowan0@gmail.com");
 
 			expect(manager.getRole()).toEqual(testRole);
 		});
