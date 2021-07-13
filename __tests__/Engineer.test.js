@@ -3,14 +3,17 @@ const Engineer = require("../lib/Engineer");
 describe("Engineer class", () => {
 	describe("constructor", () => {
 		it("should set engineer's github username", () => {
-			const testGithutUsername = "vivicowan";
-			const engineer = new Engineer( "Vivi", 1738, "vivicowan0@gmail.com", testGithutUsername );
+			const engineer = new Engineer("Vivi", 1738, "vivicowan0@gmail.com", "vivicowan");
 
-			expect(engineer.githubUsername).toEqual(testGithutUsername);
+			expect( typeof( engineer )).toEqual("object");
+			expect(engineer.name).toEqual(expect.any(String));
+			expect(engineer.id).toEqual(expect.any(Number));
+			expect(engineer.email).toEqual(expect.any(String))
+			expect(engineer.github).toEqual(expect.any(String));
     	});
    });
 
-	describe("getName", () => {
+	describe("getGitHub", () => {
 		it("should get github account using github", () => {
 			const testGithutUsername = "vivicowan";
 			const engineer = new Engineer( "Vivi", 1738, "vivicowan0@gmail.com", testGithutUsername );

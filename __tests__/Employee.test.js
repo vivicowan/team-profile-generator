@@ -5,7 +5,7 @@ describe("Employee class", () => {
 		it("should create an employee object", () => {
 			const employee = new Employee("Vivi", 1738, "vivicowan0@gmail.com");
 			
-			expect( typeof( employee )).toBe( "object" );
+			expect(typeof(employee)).toEqual("object");
 			expect(employee.name).toEqual(expect.any(String));
 			expect(employee.id).toEqual(expect.any(Number));
 			expect(employee.email).toEqual(expect.any(String));
