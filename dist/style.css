@@ -1,7 +1,7 @@
 .navbar h1 {
 	color: aliceblue;
 	padding: 10px;
-	font-family: Tourney;
+	font-family: 'Tourney';
 	font-size: 65px;
 
 }
@@ -12,4 +12,15 @@ body{
 	background-position: center;
 	display: block;
 	height: 600px;
+}
+
+.container {
+	margin: 100px auto;
+	justify-content: space-evenly;
+	font-family: 'Arvo';
+	
+}
+
+.card {
+	box-shadow:  0 0 30px #000000, 0 0 40px #000000;
 }
