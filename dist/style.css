@@ -1,7 +1,8 @@
 .navbar h1 {
 	color: aliceblue;
 	padding: 10px;
-	font-family: 'Tourney';
+	font-family: 'Arvo';
+	font-weight: 600;
 	font-size: 65px;
 
 }
@@ -15,7 +16,6 @@ body{
 }
 
 .container {
-	margin: 100px auto;
 	justify-content: space-evenly;
 	font-family: 'Arvo';
 	
