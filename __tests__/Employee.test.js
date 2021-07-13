@@ -23,8 +23,8 @@ describe("Employee class", () => {
 
 	describe("getID", () => {
 		it("should test employee ID", () => {
-			const testName = 1738;
-			const employee = new Employee(testID);
+			const testID = 1738;
+			const employee = new Employee("Vivi", testID);
 
 			expect(employee.getID()).toEqual(testID);
 		});
@@ -32,8 +32,8 @@ describe("Employee class", () => {
 
 	describe("getEmail", () => {
 		it("should test employee email", () => {
-			const testEmail = "vivicowan0@gmail.com";
-			const employee = new Employee(testEmail);
+			const testEmail = 'vivicowan0@gmail.com';
+			const employee = new Employee("Vivi", 1738, testEmail);
 			
 			expect(employee.getEmail()).toEqual(testEmail);
 		});
