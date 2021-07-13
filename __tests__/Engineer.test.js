@@ -14,11 +14,11 @@ describe("Engineer class", () => {
    });
 
 	describe("getGitHub", () => {
-		it("should get github account using github", () => {
-			const testGithutUsername = "vivicowan";
-			const engineer = new Engineer( "Vivi", 1738, "vivicowan0@gmail.com", testGithutUsername );
+		it("should get github account information", () => {
+			const testGithub = "vivicowan";
+			const engineer = new Engineer("Vivi", 1738, "vivicowan0@gmail.com", testGithub);
 
-			expect(engineer.githubUsername).toEqual(testGithutUsername);
+			expect(engineer.github).toEqual(testGithub);
 		});
 	});
 
