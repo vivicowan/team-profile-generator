@@ -43,7 +43,7 @@ const generateIntern = function (intern) {
 	<div class="card h-100">
 		<div class="card-header">
 			<h3>${intern.name}</h3>
-			<h4>Intern</h4><i class="fas fa-coffee"></i>
+			<h4>Intern</h4><i class="fas fa-graduation-cap"></i>
 	   </div>
 
 		<div class="card-body">
