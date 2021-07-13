@@ -1,5 +1,15 @@
 .navbar h1 {
 	color: aliceblue;
 	padding: 10px;
+	font-family: Tourney;
+	font-size: 65px;
 
+}
+
+body{
+	background: url("../images/background.jpeg") no-repeat center center fixed;
+	background-size: cover;
+	background-position: center;
+	display: block;
+	height: 600px;
 }
