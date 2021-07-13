@@ -18,14 +18,14 @@ describe('Intern', () => {
 		const testSchool = "UTA";
 		const intern = new Intern("Vivi", 1738, "vivicowan0@gmail.com", testSchool);
 	
-		expect(intern.getSchool()).toBe(testSchool);
+		expect(intern.getSchool()).toEqual(testSchool);
 	  });
 	});
       
 	describe("getRole", () => {
 		it("should return Intern as role", () => {
 			const testRole = "Intern";
-			const intern = new Engineer("Vivi", 1738, "vivicowan0@gmail.com");
+			const intern = new Intern("Vivi", 1738, "vivicowan0@gmail.com");
 
 			expect(intern.getRole()).toEqual(testRole);
 		});
