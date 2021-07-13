@@ -1,8 +1,8 @@
 const Intern = require("../lib/Intern");
 
-describe('Intern', () => {
-	describe('constructor', () => {
-	  it('should create an intern object', () => {
+describe("Intern", () => {
+	describe("constructor", () => {
+	  it("should create an intern object", () => {
 			const intern = new Intern("Vivi", 1738, "vivicowan0@gmail.com", "UTA");
 			
 			expect(typeof(intern)).toEqual("object");
@@ -13,8 +13,8 @@ describe('Intern', () => {
 	  });
 	});
       
-	describe('getSchool', () => {
-	  it('should get school information', () => {
+	describe("getSchool", () => {
+	  it("should get school information", () => {
 		const testSchool = "UTA";
 		const intern = new Intern("Vivi", 1738, "vivicowan0@gmail.com", testSchool);
 	
