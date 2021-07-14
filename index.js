@@ -1,5 +1,7 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
+const chalk = require("chalk");
+const figlet = require("figlet");
 
 const generateHTML = require("./src/generateHTML");
 
@@ -10,6 +12,11 @@ const Intern = require("./lib/Intern");
 const finalTeam = [];
 
 const managerPrompt = () => {
+	console.log(figlet.textSync('Team Profile Generator', {
+		font: 'Rectangles',
+		horizontalLayout: 'default',
+		verticalLayout: 'default',
+   }));
 	return inquirer.prompt ([
 		{
 			type: "input",
