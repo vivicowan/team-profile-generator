@@ -93,6 +93,7 @@ generateHTML = (data) => {
 	return generateTeam;
 }
 
+// HTML with employee cards
 const generateTeamPage = function(employees) {
 	return `
 <!DOCTYPE html>

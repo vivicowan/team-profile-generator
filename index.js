@@ -1,16 +1,21 @@
+// node and npm links
 const fs = require("fs");
 const inquirer = require("inquirer");
 const chalk = require("chalk");
 const figlet = require("figlet");
 
+// link to team page 
 const generateHTML = require("./src/generateHTML");
 
+// team profiles 
 const Manager = require("./lib/Manager");
 const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
 
+// empty array for generated team
 const finalTeam = [];
 
+// Manager prompt start
 const managerPrompt = () => {
 	console.log(chalk.greenBright(figlet.textSync('Team Profile Generator', {
 		font: 'Rectangles',
@@ -81,6 +86,7 @@ const managerPrompt = () => {
 	})
 };
 
+// other employee prompts
 const employeePrompt = () => {
 	console.log(`
 ##############################
