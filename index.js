@@ -12,11 +12,11 @@ const Intern = require("./lib/Intern");
 const finalTeam = [];
 
 const managerPrompt = () => {
-	console.log(figlet.textSync('Team Profile Generator', {
+	console.log(chalk.greenBright(figlet.textSync('Team Profile Generator', {
 		font: 'Rectangles',
 		horizontalLayout: 'default',
 		verticalLayout: 'default',
-   }));
+   })));
 	return inquirer.prompt ([
 		{
 			type: "input",
